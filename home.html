@@ -20,7 +20,11 @@
             text-align: center;
             padding: 20px;
         }
-
+        
+        .content {
+            display: flex;
+        }
+        
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -29,6 +33,7 @@
 
         .photo {
             margin-bottom: 20px;
+            margin-left: 20px;
             text-align: center;
         }
 
@@ -41,6 +46,10 @@
             font-style: italic;
             text-align: center;
             margin-bottom: 20px;
+        }
+
+        .text {
+            flex-grow: 1;
         }
 
         footer {
@@ -76,6 +85,7 @@
             text-decoration: none;
             color: #fff;
         }
+        
     </style>
 </head>
 <body>
@@ -87,7 +97,7 @@
 
 <nav>
     <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="#about.html">About me</a></li>
         <li><a href="#help.html">Help</a></li>
@@ -95,7 +105,14 @@
 </nav>
 
 <div class="container">
-    <h1>still building</h1>
+   <div class="photo">
+        <img src="photo1.jpg" alt="Photo 1">
+        <div class="caption">Caption for Photo 1</div>
+   </div>
+    <div class="text">
+        <h1>test text</h1>
+        <p>This is the home page.</p>
+    </div>
 </div>
 
 <footer>
