@@ -20,7 +20,11 @@
             text-align: center;
             padding: 20px;
         }
-
+        
+        .content {
+            display: flex;
+        }
+        
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -29,18 +33,25 @@
 
         .photo {
             margin-bottom: 20px;
-            text-align: center;
+            margin-left: 20px;
+            text-align: right;
         }
 
         .photo img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
+            float: right
         }
 
         .caption {
             font-style: italic;
             text-align: center;
             margin-bottom: 20px;
+        }
+
+        .text {
+            flex-grow: 1;
+            float: left
         }
 
         footer {
@@ -76,6 +87,7 @@
             text-decoration: none;
             color: #fff;
         }
+        
     </style>
 </head>
 <body>
@@ -89,13 +101,19 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="#about.html">About me</a></li>
-        <li><a href="#help.html">Help</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="help.html">Help</a></li>
     </ul>
 </nav>
 
 <div class="container">
-    <h1>still building</h1>
+   <div class="photo">
+        <img src="Lucas_defence/photo1.jpeg" alt="Photo 1">
+   </div>
+    <div class="text">
+        <h1>test text</h1>
+        <p>This is the about page.</p>
+    </div>
 </div>
 
 <footer>

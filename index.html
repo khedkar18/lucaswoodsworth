@@ -25,21 +25,53 @@
             display: flex;
         }
         
-        .container {
+        .container1 {
+            position:relative;
+            top: 50px;
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
         }
-
-        .photo {
-            margin-bottom: 20px;
-            margin-left: 20px;
-            text-align: center;
+        .container2 {
+            position:relative;
+            top: 500px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
 
-        .photo img {
-            max-width: 100%;
-            height: auto;
+        .container3 {
+            position:relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .photo1 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .photo1 img {
+            max-width: 30%;
+            float: right
+        }
+        .photo2 {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .photo2 img {
+            max-width: 50%;
+            float: left
+        }
+
+        .text1 {
+            flex-grow: 1;
+            float: left
+        }
+        .text2 {
+            flex-grow: 1;
+            float: right
         }
 
         .caption {
@@ -48,19 +80,16 @@
             margin-bottom: 20px;
         }
 
-        .text {
-            flex-grow: 1;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             width: 100%;
-            bottom: 0;
+            top: 1100px;
         }
+       
 
         /* Style for navigation tabs */
         nav {
@@ -78,7 +107,7 @@
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 40px;
         }
 
         nav ul li a {
@@ -99,25 +128,36 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="#about.html">About me</a></li>
-        <li><a href="#help.html">Help</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="help.html">Help</a></li>
     </ul>
 </nav>
 
-<div class="container">
-   <div class="photo">
-        <img src="photo1.jpg" alt="Photo 1">
-        <div class="caption">Caption for Photo 1</div>
-   </div>
-    <div class="text">
-        <h1>test text</h1>
+<div class="container1">
+    <div class="photo1">
+        <img src="Lucas_defence/photo1.jpeg" alt="Photo 1">
+    </div>
+    <div class="text1">
+        <h1>text for photo1</h1>
         <p>This is the home page.</p>
     </div>
 </div>
 
-<footer>
-    <p>&copy; 2024 Farewell Tribute</p>
-</footer>
+<div class="container2">
+    <div class="photo2">
+        <img src="Lucas_defence/photo2.jpeg" alt="Photo 2">
+    </div>
+    <div class="text2">
+        <h1>text for photo2</h1>
+        <p>This is the home page.</p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Farewell Tribute</p>
+    </footer>
+
+
 
 </body>
 </html>
