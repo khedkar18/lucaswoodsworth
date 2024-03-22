@@ -19,28 +19,55 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            position: relative;
+            top: 0px;
         }
         
         .content {
             display: flex;
         }
         
-        .container {
+        .container1 {
+            position:relative;
+            top: 50px;
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
         }
-
-        .photo {
-            margin-bottom: 20px;
-            margin-left: 20px;
-            text-align: right;
+        .container2 {
+            position:relative;
+            top: 500px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
 
-        .photo img {
-            max-width: 50%;
-            height: auto;
+        .photo1 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .photo1 img {
+            max-width: 30%;
             float: right
+        }
+        .photo2 {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .photo2 img {
+            max-width: 50%;
+            float: left;
+        }
+
+        .text1 {
+            flex-grow: 1;
+            float: left;
+        }
+        .text2 {
+            flex-grow: 1;
+            float: right;
         }
 
         .caption {
@@ -49,20 +76,16 @@
             margin-bottom: 20px;
         }
 
-        .text {
-            flex-grow: 1;
-            float: left
-        }
-
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
-            bottom: 0;
+            position: relative;
+            top: 1200px;
         }
+       
 
         /* Style for navigation tabs */
         nav {
@@ -107,14 +130,22 @@
     </ul>
 </nav>
 
-<div class="container">
-   <object type="text/html" data="https://tu-dresden.de/bu/bauingenieurwesen/sdt/das-institut/beschaeftigte/wissenschaftliche-mitarbeiter/licas-woodworth" width="1000px">
-    </object>
+<div class="container1">
+    <iframe
+    src="https://tu-dresden.de/bu/bauingenieurwesen/sdt/das-institut/beschaeftigte/wissenschaftliche-mitarbeiter/licas-woodworth"
+    name="targetframe"
+    allowTransparency="true"
+    scrolling="no"
+    frameborder="0">
+</iframe>
 </div>
+
 
 <footer>
     <p>&copy; 2024 Farewell Tribute</p>
 </footer>
+
+
 
 </body>
 </html>
