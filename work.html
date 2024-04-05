@@ -1,3 +1,8 @@
+
+To ensure that the header and footer cover the entire width of the mobile screen and are centered properly, we can adjust their CSS styles within the media query for smaller screens. Here's the updated code:
+
+html
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,13 +84,10 @@
         }
 
         @media only screen and (max-width: 600px) {
-            .content {
-                flex-direction: column;
-            }
-
-            .container {
+            header,
+            footer {
                 width: 100%;
-                max-width: none;
+                text-align: center;
             }
         }
     </style>
