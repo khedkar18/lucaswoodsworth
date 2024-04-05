@@ -77,6 +77,17 @@
                 max-width: calc(50% - 40px);
             }
         }
+
+        @media only screen and (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+            }
+        }
     </style>
 </head>
 
@@ -100,18 +111,6 @@
 <div class="content">
     <div class="container">
         <iframe
-            src="TU_profile.html"
-            name="targetframe"
-            allowTransparency="true"
-            scrolling="yes"
-            frameborder="0"
-            height="2500"
-            width="1000"
-        ></iframe>
-    </div>
-
-    <div class="container">
-        <iframe
             src="ansys.html"
             name="targetframe"
             allowTransparency="true"
@@ -119,6 +118,18 @@
             frameborder="0"
             height="396"
             width="460"
+        ></iframe>
+    </div>
+
+    <div class="container">
+        <iframe
+            src="TU_profile.html"
+            name="targetframe"
+            allowTransparency="true"
+            scrolling="yes"
+            frameborder="0"
+            height="2500"
+            width="1000"
         ></iframe>
     </div>
 </div>
