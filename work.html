@@ -19,29 +19,19 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            position: relative;
-            top: 0px;
         }
-        
+
         .content {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        
-        .container1 {
-            position:absolute;
-            top: 300px;
-            left: 50px;
-            max-width: 200px;
-            margin: 20px auto;
+
+        .container {
+            max-width: 100%;
+            margin: 20px;
             padding: 0 20px;
-        }
-        .container2 {
-            position:absolute;
-            top: 400px;
-            right: 700px;
-            max-width: 200px;
-            margin: 20px auto;
-            padding: 0 20px;
+            box-sizing: border-box;
         }
 
         footer {
@@ -50,10 +40,7 @@
             text-align: center;
             padding: 10px 0;
             width: 100%;
-            position: relative;
-            top: 2600px;
         }
-       
 
         /* Style for navigation tabs */
         nav {
@@ -79,10 +66,19 @@
             text-decoration: none;
             color: #fff;
         }
-        
+
+        /* Media queries for responsiveness */
+        @media only screen and (min-width: 600px) {
+            .content {
+                flex-direction: row;
+            }
+
+            .container {
+                max-width: calc(50% - 40px);
+            }
+        }
     </style>
 </head>
-
 
 <body>
 
@@ -101,40 +97,35 @@
     </ul>
 </nav>
 
-<div class="container1">
+<div class="content">
+    <div class="container">
+        <iframe
+            src="TU_profile.html"
+            name="targetframe"
+            allowTransparency="true"
+            scrolling="yes"
+            frameborder="0"
+            height="2500"
+            width="1000"
+        ></iframe>
+    </div>
 
-    <iframe
-    src="TU_profile.html"
-    name="targetframe"
-    allowTransparency="true"
-    scrolling="yes"
-    frameborder="0"
-    height="2500"
-    width="1000"
-    >
-
-</iframe>
+    <div class="container">
+        <iframe
+            src="ansys.html"
+            name="targetframe"
+            allowTransparency="true"
+            scrolling="yes"
+            frameborder="0"
+            height="396"
+            width="460"
+        ></iframe>
+    </div>
 </div>
-
-<div class="container2">
-    <iframe
-    src="ansys.html"
-    name="targetframe"
-    allowTransparency="true"
-    scrolling="yes"
-    frameborder="0"
-    height="396"
-    width="460"
-    >
-</iframe>
-</div>
-
 
 <footer>
     <p>&copy; 2024 Farewell Tribute</p>
 </footer>
-
-
 
 </body>
 </html>
